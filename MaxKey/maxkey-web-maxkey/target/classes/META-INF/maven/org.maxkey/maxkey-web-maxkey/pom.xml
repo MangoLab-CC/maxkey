@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.maxkey</groupId>
+		<artifactId>MaxKey</artifactId>
+		<version>1.0</version>
+	</parent>
+
+	<artifactId>maxkey-web-maxkey</artifactId>
+	<description>认证系统</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.maxkey</groupId>
+			<artifactId>maxkey-core</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.maxkey</groupId>
+			<artifactId>maxkey-persistence</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.maxkey</groupId>
+			<artifactId>maxkey-authentications</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.maxkey</groupId>
+			<artifactId>maxkey-protocol-authorize</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.maxkey</groupId>
+			<artifactId>maxkey-protocol-oauth-2.0</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.maxkey</groupId>
+			<artifactId>maxkey-protocol-saml-2.0</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.maxkey</groupId>
+			<artifactId>maxkey-protocol-cas</artifactId>
+			<version>1.0</version>
+		</dependency>
+
+
+		<!-- compile project(":maxkey-authentications") compile project(":maxkey-protocols:maxkey-protocol-authorize") 
+			compile project(":maxkey-protocols:maxkey-protocol-cas") compile project(":maxkey-protocols:maxkey-protocol-desktop") 
+			compile project(":maxkey-protocols:maxkey-protocol-extendapi") compile project(":maxkey-protocols:maxkey-protocol-formbased") 
+			compile project(":maxkey-protocols:maxkey-protocol-tokenbased") compile project(":maxkey-identitys:maxkey-identity-kafka") -->
+	</dependencies>
+</project>
